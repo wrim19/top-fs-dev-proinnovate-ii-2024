@@ -1,8 +1,7 @@
 # Programa Top Full Stack Developer Proinnóvate 2024
 
 ## Mentores 👩🏻‍🏫👨🏼‍🏫
-
-- [Nombre del mentor](profiles/mentor-principal.md)
+- Shymmy W. Garcia
 - Mentor 2
 - Mentor 3
 
@@ -34,7 +33,7 @@ Pueden ocurrir varias actividades en este rango de tiempo
 - Retrospectiva del spint
 - Resolución de dudas a través del chat
 
-### 05:50 pm - 7:00 pm:
+### 04:00 pm - 5:00 pm:
 
 Clase Magistral en línea con mentor principal
 
