@@ -14,7 +14,7 @@
 
 ## Como es un dia de estudio durante el programa TOP?
 
-### 7:00 am - 8:00 am:
+### 8:00 am - 9:00 am:
 
 Clase Magistral en línea con mentor principal
 
