@@ -1,0 +1,151 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* App Container */
+#app-container {
+  background-color: white;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #3CADD4;
+  margin-bottom: 20px;
+}
+
+/* Input and Add Task Button */
+input[type="text"] {
+  width: calc(100% - 100px);
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+#addTaskButton {
+  padding: 10px 20px;
+  background-color: #3CADD4;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#addTaskButton:hover {
+  background-color: #3498db;
+}
+
+/* Filter Buttons */
+button.filter-btn {
+  padding: 8px 15px;
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 5px;
+}
+
+button.filter-btn:hover {
+  background-color: #ccc;
+}
+
+button.filter-btn.active {
+  background-color: #3CADD4;
+  color: white;
+}
+
+/* Task List */
+ul#taskList {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+ul#taskList li {
+  background-color: #fafafa;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+ul#taskList li:hover {
+  background-color: #f0f0f0;
+}
+
+ul#taskList li.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+ul#taskList button {
+  background-color: transparent;
+  border: none;
+  font-size: 0.9rem;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+ul#taskList button:hover {
+  color: #e74c3c;
+}
+
+ul#taskList button.edit-btn {
+  color: #3CADD4;
+}
+
+ul#taskList button.edit-btn:hover {
+  color: #2980b9;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  input[type="text"] {
+    width: calc(100% - 80px);
+  }
+
+  #addTaskButton {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  button.filter-btn {
+    padding: 6px 10px;
+  }
+
+  ul#taskList li {
+    font-size: 0.9rem;
+  }
+}
