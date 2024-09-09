@@ -10,6 +10,39 @@ In modern web development, UIs are often dynamic, and changes in data need to be
 
 ---
 
+## Simple approach
+
+```js
+const state = [];
+let price = 10;
+let quantity=5;
+let total = 0
+
+let target = ()=>{
+  total = price * quantity;
+}
+const store=()=>{
+  state.push(target)
+}
+
+function updateState(){
+  state.forEach(fn=>fn())
+}
+
+///
+
+store()
+target()
+console.log(total)
+price = 5
+updateState()
+console.log(total)
+quantity=2
+updateState()
+console.log(total)
+```
+
+
 ## How to Achieve Reactivity in Vanilla JavaScript
 
 ### 1. Using `Object.defineProperty`

@@ -19,3 +19,14 @@ export function validatePhone(phone) {
   const phoneRegex = /^[0-9]+$/;
   return phoneRegex.test(phone);
 }
+
+
+/**
+ * Function to add numbers
+ * @param {number} a 
+ * @param {number} b 
+ * @returns the addition of a and b
+ */
+export function add(a, b) {
+  return a + b;
+}
