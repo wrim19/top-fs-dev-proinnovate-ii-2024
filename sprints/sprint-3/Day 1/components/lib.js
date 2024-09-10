@@ -5,9 +5,9 @@
  * @param {object} attributes attributes object
  * @returns
  */
-export function createElement(tag, text, attributes = {}, ...children) {
+export function createElement(tag,  attributes = {}, ...children) {
   const element = document.createElement(tag);
-  element.textContent = text;
+
   for (const [key, value] of Object.entries(attributes)) {
     if (key === 'class') {
       element.setAttribute(key, value);
@@ -33,16 +33,16 @@ export function createElement(tag, text, attributes = {}, ...children) {
         element.appendChild(child.render());
         return;
     }
-    element.appendChild(child);
+    // element.appendChild(child);
   });
 
   return element;
 }
 
 export const render = (component, root) => {
-  const rootB = document.getElementById(root);
-  rootB.innerHTML = '';
-  rootB.appendChild(component.render());
+    const rootElement = document.getElementById(root);
+    rootElement.innerHTML = '';
+    rootElement.appendChild(component.render());
 };
 
 export function react() {

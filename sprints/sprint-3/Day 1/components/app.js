@@ -1,3 +1,5 @@
+/** @jsx createElement */
+
 import { createElement, render } from './lib.js';
 import { createStore } from './store.js';
 
@@ -54,21 +56,39 @@ function Counter() {
   };
 }
 
+// function App() {
+//   return {
+//     render() {
+//       return (
+//         <div>
+//           <h1>Counter App</h1>
+//           <p>Count{getState().counter}</p>
+//           <button onClick={() => dispatch({ type: 'INCREMENT' })}>
+//             Increment
+//           </button>
+//         </div>
+//       );
+//     },
+//   };
+// }
+
 function App() {
   return {
     render() {
-      return (
-        <div>
-          <h1>Counter App</h1>
-          <p>Count{getState().counter}</p>
-          <button onClick={() => dispatch({ type: 'INCREMENT' })}>
-            Increment
-          </button>
-        </div>
+      return createElement(
+        'div',
+        '',
+        {},
+        createElement('h1', 'Counter App', {}),
+        createElement('p', `Count: ${getState().counter}`, {}),
+        createElement('button', 'Increment', {
+          onClick: () => dispatch({ type: 'INCREMENT' }),
+        })
       );
     },
   };
 }
+
 
 render(Counter(), 'root');
 subscribe(() => render(Counter(), 'root'));
