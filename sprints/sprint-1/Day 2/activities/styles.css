@@ -1,0 +1,15 @@
+.card-container{
+    container-type: inline-size;
+}
+@container (min-width: 768px){
+    .card {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@container (max-width: 500px){
+    .card{
+        display: block;
+    }
+}
