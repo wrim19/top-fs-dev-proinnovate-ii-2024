@@ -1,58 +1,9 @@
 /* 
-.topper {
-  font-size: 16px;
-  line-height: 1.2em;
-  text-transform: uppercase;
-  text-align: inherit;
-  letter-spacing: 0.1em;
-  font-weight: 700;
-  color: #ff6a3e;
-  margin-bottom: 0.25rem;
-  display: block;
-}
 
-.title {
-  font-size: 49px;
-  font-weight: 900;
-  line-height: 1.2em;
-  text-align: inherit;
-  max-width: 43.75rem;
-  margin: 0 0 1rem 0;
-  color: #1a1a1a;
-  position: relative;
-}
 
-.text {
-  font-size: 16px;
-  line-height: 1.5em;
-  text-align: inherit;
-  width: 100%;
-  max-width: 40.625rem;
-  margin: 0;
-  color: #4e4b66;
-}
 
-#hero {
-  padding: 300px;
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-}
-#hero .container {
-  width: 100%;
-  max-width: 80rem;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 3rem;
-}
-#hero .content {
-  text-align: center;
-  width: 100%;
-  max-width: 46.875rem;
-}
+
+
 #hero .title {
   font-size: 84px;
 }
@@ -151,8 +102,6 @@
   height: Fixed (812px)px;
   top: -16px;
   left: 1429px;
-  gap: 8px;
-  opacity: 0px;
   background: #000000B2;
 
  }
@@ -244,3 +193,102 @@ header{
   padding: 11px;
   background: #111926;
 }
+
+/*MAIN CONTENT*/
+/* main{
+  width: 100%;
+  padding: 200px 16px 200px 16px;
+  background-image: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.png");
+} */
+
+main {
+  width: 100%;
+  padding: 200px 16px;
+  background-image: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.png");
+  background-size: cover; 
+  background-position: center; 
+  position: relative; 
+  z-index: 1;
+  margin-bottom: -136px;
+}
+
+#hero .heroContainer {
+  width: 100%;
+  max-width: 80rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#hero .content {
+  text-align: center;
+  width: 100%;
+  max-width: 46.875rem;
+}
+
+.topper {
+  margin-bottom: 0.25rem;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15.6px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  display: block;
+  color: #F41E1E;
+}
+
+.title {
+  position: relative;
+  font-family: Roboto;
+  font-size: 49px;
+  font-weight: 900;
+  line-height: 58.8px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.text {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #F7F7F7;
+}
+
+#hero .button-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /*ojito con el wrap*/
+  gap: 0.5rem;
+}
+#hero .button-solid {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 56px;
+  text-align: center;
+  text-decoration: none;
+  min-width: 12.5rem;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0 1.5rem;
+  background-color: #F41E1E;
+  color: #fafbfc;
+  border-radius: 0.25rem;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+footer {
+  height: 136px;
+  overflow: hidden;
+  background-image: url('https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-splatter2.svg');
+  background-size: cover; 
+  background-position: center bottom;
+  position: relative;
+  z-index: 3;
+}
+
