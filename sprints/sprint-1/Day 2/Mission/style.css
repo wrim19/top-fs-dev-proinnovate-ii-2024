@@ -1,0 +1,224 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+  height: 100vh
+}
+header {
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  padding: 12px 60px 12px 60px;
+}
+.TopBarContent{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.ContactText{
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.Text{
+  display: flex;
+  gap: 8px;
+}
+.Text img{
+  width: 16px;
+  height: 16px;
+  align-self: center;
+}
+.Text p{
+  margin: 0 ;
+  padding-right: 24px;
+  font-size: 14px;
+  font-style: Body/Regular-S;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+
+.Socials{
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  align-items: center;
+}
+.Socials img{
+  width: 20px;
+  height: 20px;
+}
+
+.Navigation{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Logo{
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+}
+.Logo img{
+  width: 59px;
+  height: 48px;
+}
+
+.Menu{
+  display: flex;
+  justify-content: flex-end;
+  gap: 80px;
+}
+.Navigation {
+  display: flex;
+  gap: 80px;
+}
+.NavigationMenu ul{
+  display: flex;
+  justify-content: flex-end;
+  gap: 80px;
+}
+.Navigation ul li{
+  align-self: center;
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+}
+.Navigation ul li img{
+  width:24px ;
+  height: 24px;
+}
+
+.HamburguerMenu{
+  display: none;
+}
+
+.BtnJoinUsToday{
+  align-self: center;
+}
+.buttonSolid{
+  text-decoration: none;
+  padding: 16px 32px 16px 32px;
+  gap: 10px;
+  text-align: center;
+  background-color: #F41E1E;
+  color: #fafbfc;
+}
+main{
+  width: 100%;
+  height: 100%;
+}
+#hero{
+  margin: 0;
+  height: 100%;
+}
+#hero .heroContainer {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+#hero .content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.topper {
+  margin-bottom: 0.25rem;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15.6px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #F41E1E;
+}
+.title {
+  position: relative;
+  font-family: Roboto;
+  font-size: 49px;
+  font-weight: 900;
+  line-height: 58.8px;
+  text-align: center;
+  color: #000000;
+}
+.text {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+footer {
+  width: 100%;
+  margin: 0;
+  padding: 0; 
+}
+.FooterImg img {
+  width: 100%; /* Make the image responsive */
+  height: 150px; /* Fixed height */
+  object-fit: cover; /* Maintain aspect ratio */
+  border: 3px solid #ff9daa; /* Border styling */
+}
+
+
+@media (max-width: 400px) {
+  header{
+    padding: 0;
+    margin: 0;
+  }
+
+  .TopBarContent{
+    padding: 12px 16px 12px 16px;
+  }
+  .Text:first-child,  .Text:last-child {
+    display: none;
+  }
+  .Text p{
+    border-right: 1px solid #E8E8E8;
+  }
+
+  .Navigation{
+    padding: 16px;
+  }
+  .Menu{
+    display: none;
+  }
+  .Logo{
+    gap: 12.04px;
+    justify-content: center;
+    align-items: center;
+  }
+  .Logo img{
+    width: 44.39px;
+    height: 36.11px;
+  }
+  .Logo p{
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .HamburguerMenu{
+    display: flex;
+    width: 24px;
+    height: 24px;
+    padding: 11px;
+    background: #111926;
+    gap: 10px;
+  }
+
+  #hero .content {
+    padding: 16px;
+  }
+}
