@@ -2,8 +2,6 @@ body{
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: black;
-  height: 100vh
 }
 header {
   background-color: rgb(255, 255, 255);
@@ -108,9 +106,13 @@ header {
   background-color: #F41E1E;
   color: #fafbfc;
 }
-main{
-  width: 100%;
-  height: 100%;
+main {
+  background-image: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.png");
+  background-size: cover; 
+  background-position: center; 
+  position: relative; 
+  z-index: 1;
+  height: calc(100vh - 136px);
 }
 #hero{
   margin: 0;
@@ -148,7 +150,7 @@ main{
   font-weight: 900;
   line-height: 58.8px;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
 }
 .text {
   font-family: Roboto;
@@ -156,21 +158,19 @@ main{
   font-weight: 400;
   line-height: 24px;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
 }
 
 footer {
-  width: 100%;
-  margin: 0;
-  padding: 0; 
+  height: 136px;
+  background-image: url('https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-splatter2.svg');
+  background-size: cover; 
+  z-index: 2;
+  position: absolute; 
+  bottom: 0; 
+  left: 0;
+  right: 0;
 }
-.FooterImg img {
-  width: 100%; /* Make the image responsive */
-  height: 150px; /* Fixed height */
-  object-fit: cover; /* Maintain aspect ratio */
-  border: 3px solid #ff9daa; /* Border styling */
-}
-
 
 @media (max-width: 400px) {
   header{
