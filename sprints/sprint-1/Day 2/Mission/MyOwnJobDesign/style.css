@@ -1,0 +1,149 @@
+body,p, h2,h4{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+#SectionHeading{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+.TextPrincing{
+    gap: 4px;
+}
+.TextPrincing h4{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #F41E1E;
+}
+.TextPrincing h2{
+    font-family: Roboto;
+    font-size: 49px;
+    font-weight: 900;
+    line-height: 58.8px;
+    text-align: left;
+    color: #1A1A1A;
+}
+
+.PackageFeatures ul{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 12px;
+}
+.CustomIcon{
+    background: url('Approve.svg') no-repeat left center;
+    padding-left: 25px;
+}
+
+.BtnReadMore{
+    align-self: flex-end;
+    width: Hug (174px);
+    height: Fixed (56px);
+    padding: 16px 48px 16px 48px;
+    gap: 24px;
+    background-color: #F41E1E;
+}
+.BtnReadMore a{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: center;
+    color: #F7F7F7;
+    text-decoration: none;
+}
+
+#MobileSectionTop{
+    display: none;
+}
+
+#PricingCards,.PackageCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.PackageCards .Cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width:360px) {
+    body{
+        padding: 60px 16px 140px 16px;
+        gap: 48px;
+    }
+    #SectionHeading{
+        display: none;
+    }
+
+    #PricingCards .PackageFeatures{
+        display: none;
+    }
+
+    #MobileSectionTop{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .TextPrincing h4{font-family: Roboto;
+        font-size: 13px;
+        line-height: 15.6px;
+    }
+    .TextPrincing h2{
+        font-size: 31px;
+        line-height: 37.2px;
+    }
+
+    .PackageFeatures{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+    }
+    .PackageFeatures .BtnReadMore{
+        align-self: flex-start;
+    }
+
+    .PackageCards{
+        flex-direction: column;
+    }
+    .Cards {
+        border: 1px solid #ccc;
+    }
+    .Cards:first-child, .Cards:last-child{
+        height: 323px;
+        padding: 32px 16px;
+    }
+    .Package{
+        gap: 24px;
+    }
+    .Package h4{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.2px;
+        letter-spacing: 0.1em;
+        text-align: center;
+    }
+    .Package h2{
+        font-family: Roboto;
+        font-size: 31px;
+        font-weight: 900;
+        line-height: 37.2px;
+        text-align: left;
+    }
+    .Cards:nth-child(2){
+        height: 355px;
+    }
+}
