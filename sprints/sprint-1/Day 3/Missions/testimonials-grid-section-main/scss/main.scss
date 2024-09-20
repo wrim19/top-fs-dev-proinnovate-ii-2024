@@ -1,0 +1,85 @@
+$font-family:sans-serif;
+$text-primary-color:#000000;
+$text-secondary-color:#ffffff;
+
+
+body, h1,h2,h3,p,img{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    background-color: #edf2f8;
+}
+
+.testimonial{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+.testimonial__container{
+  border-radius: 0.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #ffffff;
+  color:$text-primary-color;
+}
+.testimonial__container--quoted {
+    background-image: url('../images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 2rem) top; /* Adjust 1rem to your desired space */
+    background-size: 10rem;
+}
+.testimonial__container--purple {
+  background-color: #723fc8;
+  color: $text-secondary-color;
+}
+.testimonial__container--gray {
+  background-color: #49556b;
+  color: $text-secondary-color;
+}
+.testimonial__container--black {
+  background-color: #18202d;
+  color: $text-secondary-color;
+}
+.testimonial__perfilInfo{
+  display: flex;
+  gap: 1rem;
+}
+.testimonial__perfilInfo--picture{
+  border-radius: 100%;
+  border: 2px solid rgb(255, 255, 255);
+}
+.testimonial__perfilInfo--description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.testimonial__perfilInfo--description-name{
+  font-size: 1.25rem;
+  font-family:$font-family;
+}
+.testimonial__perfilInfo--description-grade{
+  font-family: $font-family;
+  font-size: 1rem;
+  opacity: 0.6;
+}
+
+.testimonial__content{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.testimonial__content--first-quote{
+  font-size: 1.75rem;
+  font-family: $font-family;
+}
+.testimonial__content--second-quote{
+  font-family: $font-family;
+  font-size: 1rem;
+  opacity: 0.6;
+}
