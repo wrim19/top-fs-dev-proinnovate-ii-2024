@@ -1,0 +1,53 @@
+@use 'breakpoints' as *;
+
+.responsive{
+    @include Tablet{
+        .pricing__container {
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+    
+        .pricing__content {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+    
+        .pricing__features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: stretch;
+        }
+    
+        .pricing__plans {
+            flex-direction: row;
+            align-items: stretch;
+        }
+    
+        .pricing__plan {
+            margin: 1.5rem 0;
+        }
+    
+        .pricing__plan--popular {
+            margin: 0;
+        }
+    }
+    @include Desktop{
+        .pricing__features {
+            width: 30%;
+            display: flex;
+        }
+    
+        .pricing__wrapper {
+            flex-direction: row;
+            gap: 1.25rem;
+        }
+    
+        .pricing__plans {
+            margin: 0;
+        }
+    
+        .pricing__plan {
+            min-height: 25rem;
+        }
+    }
+}
