@@ -1,0 +1,116 @@
+.container, .pricing__container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing {
+  padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+  padding-bottom: 10vw;
+  background-color: #f7f7f7;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.pricing__container {
+  flex-direction: column;
+  align-items: center;
+}
+.pricing__header {
+  font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
+  font-weight: 900;
+  color: #1a1a1a;
+}
+.pricing__topper {
+  font-size: clamp(0.8125rem, 1.6vw, 1rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #F41E1E;
+  margin-bottom: 0.25;
+}
+.pricing__plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+@media (min-width: 768px) {
+  .pricing__plans {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.pricing__plan {
+  background-color: #fff;
+  padding: clamp(2rem, 2vw, 2.5rem);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.pricing__plan--popular {
+  background-color: #1a1a1a;
+  padding: 3 clamp(2rem, 2vw, 2.5rem);
+  color: #fafbfc;
+}
+.pricing__plan__title {
+  font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
+  font-weight: 700;
+}
+.pricing__plan__price {
+  font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
+  font-weight: 900;
+  color: #1a1a1a;
+}
+.pricing__features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.button {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: clamp(2.875em, 5.5vw, 3.5em);
+  text-align: center;
+  text-decoration: none;
+  padding: 0 1.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+.button--solid {
+  background-color: #F41E1E;
+  color: #fafbfc;
+}
+.button--solid::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  background: #000;
+  opacity: 1;
+  border-radius: 0.25rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: width 0.3s;
+}
+.button--solid:hover::before {
+  width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */

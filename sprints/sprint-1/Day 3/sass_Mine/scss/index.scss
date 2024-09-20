@@ -1,0 +1,17 @@
+@use 'components/_card.scss';
+@use 'components/_button.scss';
+
+@use 'components/_breakpoints.scss' as *;
+
+.responsive{
+    @include xs{
+        background-color: red;
+    }
+    @include sm{
+        background-color: blue;
+    }
+    @include md{
+        background-color: green;
+    }
+
+}

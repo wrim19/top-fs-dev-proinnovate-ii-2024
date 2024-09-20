@@ -1,0 +1,40 @@
+@use '../variables' as *; // necesita del namespace variables o si no poner el *
+
+.card{
+    background-color: $color-card-bg;  //sin el * seria como variables.$color-card-bg  
+    border: 1px solid $color-card-border;
+    // border-radius: rem(8px);
+    padding: $spacing-medium;
+
+    text-align: center;
+
+    &__title{
+
+        font-weight: bold;
+        color: $color-text-primary;
+        margin-bottom: $spacing-small;
+    }
+
+    &__description{
+        font-size: $font-size-base;
+        color: $color-text-secondary;
+        margin-bottom: $spacing-medium;
+    }
+
+    &__button{
+        display: inline-block;
+        // padding: rem(10px) rem(20px);
+        background-color: $color-primary; 
+        color: #fff;
+        text-decoration: none;
+        // border-radius: rem(4px);
+        transition: background-color 0.3s;
+
+        &:hover{
+            color: $color-text-primary;
+            // background-color: darken($color-primary, 10%);
+        }
+    }
+
+        
+}

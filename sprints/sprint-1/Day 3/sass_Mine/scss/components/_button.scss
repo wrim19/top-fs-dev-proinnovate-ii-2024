@@ -1,0 +1,20 @@
+@use '../variables' as *;
+
+@mixin btn-base{
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+    padding: 2rem 4rem;
+}
+
+.btn{
+    @include btn-base;    
+    background-color: $color-primary; 
+}
+.btn--outline{
+    @include btn-base;
+    background-color: transparent;
+    border: 2px solid $color-primary;
+    color: $color-primary;
+}
